@@ -26,10 +26,10 @@ set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public
 # set :pty, true
 
 # Default value for :linked_files is []
- set :linked_files, 'config/database.yml', 'config/secrets.yml'
+ # set :linked_files, 'config/database.yml', 'config/secrets.yml'
 
 # Default value for linked_dirs is []
- set :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system'
+ # set :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system'
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
