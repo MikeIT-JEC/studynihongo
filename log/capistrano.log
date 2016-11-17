@@ -1910,3 +1910,125 @@ and the repository exists.
  DEBUG [cccdb56f] 	tar: 
  DEBUG [cccdb56f] 	Exiting with failure status due to previous errors
  DEBUG [cccdb56f] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-11-17 18:44:56 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [c4450a6f] Running [ -d $HOME/.rbenv/versions/2.3.1 ] as deploy@138.197.16.81
+ DEBUG [c4450a6f] Command: [ -d $HOME/.rbenv/versions/2.3.1 ]
+ DEBUG [c4450a6f] Finished in 11.799 seconds with exit status 0 (successful).
+  INFO [74de5eab] Running /usr/bin/env mkdir -p /tmp as deploy@138.197.16.81
+ DEBUG [74de5eab] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [74de5eab] Finished in 12.067 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-studynihongo-production-idiotflakes.sh 0.0%
+  INFO Uploading /tmp/git-ssh-studynihongo-production-idiotflakes.sh 100.0%
+  INFO [3e6197e9] Running /usr/bin/env chmod 700 /tmp/git-ssh-studynihongo-production-idiotflakes.sh as deploy@138.197.16.81
+ DEBUG [3e6197e9] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-studynihongo-production-idiotflakes.sh )
+  INFO [3e6197e9] Finished in 0.977 seconds with exit status 0 (successful).
+  INFO [d5a7b4f8] Running /usr/bin/env git ls-remote --heads git://github.com/MikeIT-JEC/studynihongo.git as deploy@138.197.16.81
+ DEBUG [d5a7b4f8] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-studynihongo-production-idiotflakes.sh" ; /usr/bin/env git ls-remote --heads git://github.com/MikeIT-JEC/studynihongo.git )
+ DEBUG [d5a7b4f8] 	809fe4d2b8bec93fce4cf9eae428911f7243fcdf	refs/heads/master
+  INFO [d5a7b4f8] Finished in 0.897 seconds with exit status 0 (successful).
+  INFO [c9888d28] Running /usr/bin/env mkdir -p home/deploy/studynihongo/shared home/deploy/studynihongo/releases as deploy@138.197.16.81
+ DEBUG [c9888d28] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p home/deploy/studynihongo/shared home/deploy/studynihongo/releases )
+  INFO [c9888d28] Finished in 0.829 seconds with exit status 0 (successful).
+  INFO [d931f728] Running /usr/bin/env mkdir -p home/deploy/studynihongo/shared/bin home/deploy/studynihongo/shared/log home/deploy/studynihongo/shared/tmp/pids home/deploy/studynihongo/shared/tmp/cache home/deploy/studynihongo/shared/tmp/sockets home/deploy/studynihongo/shared/vendor/bundle home/deploy/studynihongo/shared/public/system home/deploy/studynihongo/shared/public/assets as deploy@138.197.16.81
+ DEBUG [d931f728] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p home/deploy/studynihongo/shared/bin home/deploy/studynihongo/shared/log home/deploy/studynihongo/shared/tmp/pids home/deploy/studynihongo/shared/tmp/cache home/deploy/studynihongo/shared/tmp/sockets home/deploy/studynihongo/shared/vendor/bundle home/deploy/studynihongo/shared/public/system home/deploy/studynihongo/shared/public/assets )
+  INFO [d931f728] Finished in 1.258 seconds with exit status 0 (successful).
+  INFO [3473dd3e] Running /usr/bin/env mkdir -p home/deploy/studynihongo/shared/config as deploy@138.197.16.81
+ DEBUG [3473dd3e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p home/deploy/studynihongo/shared/config )
+  INFO [3473dd3e] Finished in 0.879 seconds with exit status 0 (successful).
+ DEBUG [6748ffc9] Running [ -f home/deploy/studynihongo/shared/config/database.yml ] as deploy@138.197.16.81
+ DEBUG [6748ffc9] Command: [ -f home/deploy/studynihongo/shared/config/database.yml ]
+ DEBUG [6748ffc9] Finished in 0.648 seconds with exit status 0 (successful).
+ DEBUG [2ae996f1] Running [ -f home/deploy/studynihongo/shared/config/secrets.yml ] as deploy@138.197.16.81
+ DEBUG [2ae996f1] Command: [ -f home/deploy/studynihongo/shared/config/secrets.yml ]
+ DEBUG [2ae996f1] Finished in 1.592 seconds with exit status 0 (successful).
+ DEBUG [e6c9123a] Running [ -f home/deploy/studynihongo/current/REVISION ] as deploy@138.197.16.81
+ DEBUG [e6c9123a] Command: [ -f home/deploy/studynihongo/current/REVISION ]
+ DEBUG [e6c9123a] Finished in 1.787 seconds with exit status 1 (failed).
+ DEBUG [cdceb158] Running [ -f home/deploy/studynihongo/repo/HEAD ] as deploy@138.197.16.81
+ DEBUG [cdceb158] Command: [ -f home/deploy/studynihongo/repo/HEAD ]
+ DEBUG [cdceb158] Finished in 0.759 seconds with exit status 0 (successful).
+  INFO The repository mirror is at home/deploy/studynihongo/repo
+ DEBUG [60ed6c3c] Running if test ! -d home/deploy/studynihongo/repo; then echo "Directory does not exist 'home/deploy/studynihongo/repo'" 1>&2; false; fi as deploy@138.197.16.81
+ DEBUG [60ed6c3c] Command: if test ! -d home/deploy/studynihongo/repo; then echo "Directory does not exist 'home/deploy/studynihongo/repo'" 1>&2; false; fi
+ DEBUG [60ed6c3c] Finished in 0.774 seconds with exit status 0 (successful).
+  INFO [7b86638a] Running /usr/bin/env git remote update --prune as deploy@138.197.16.81
+ DEBUG [7b86638a] Command: cd home/deploy/studynihongo/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-studynihongo-production-idiotflakes.sh" ; /usr/bin/env git remote update --prune )
+  INFO [7b86638a] Finished in 1.396 seconds with exit status 0 (successful).
+ DEBUG [3a179424] Running if test ! -d home/deploy/studynihongo/repo; then echo "Directory does not exist 'home/deploy/studynihongo/repo'" 1>&2; false; fi as deploy@138.197.16.81
+ DEBUG [3a179424] Command: if test ! -d home/deploy/studynihongo/repo; then echo "Directory does not exist 'home/deploy/studynihongo/repo'" 1>&2; false; fi
+ DEBUG [3a179424] Finished in 0.757 seconds with exit status 0 (successful).
+  INFO [bd092d93] Running /usr/bin/env mkdir -p home/deploy/studynihongo/releases/20161117104532 as deploy@138.197.16.81
+ DEBUG [bd092d93] Command: cd home/deploy/studynihongo/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-studynihongo-production-idiotflakes.sh" ; /usr/bin/env mkdir -p home/deploy/studynihongo/releases/20161117104532 )
+  INFO [bd092d93] Finished in 0.778 seconds with exit status 0 (successful).
+  INFO [e6731c5d] Running /usr/bin/env git archive production | tar -x -f - -C home/deploy/studynihongo/releases/20161117104532 as deploy@138.197.16.81
+ DEBUG [e6731c5d] Command: cd home/deploy/studynihongo/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-studynihongo-production-idiotflakes.sh" ; /usr/bin/env git archive production | tar -x -f - -C home/deploy/studynihongo/releases/20161117104532 )
+ DEBUG [e6731c5d] 	fatal: Not a valid object name
+ DEBUG [e6731c5d] 	tar: 
+ DEBUG [e6731c5d] 	This does not look like a tar archive
+ DEBUG [e6731c5d] 	
+ DEBUG [e6731c5d] 	tar: 
+ DEBUG [e6731c5d] 	Exiting with failure status due to previous errors
+ DEBUG [e6731c5d] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-11-17 18:53:35 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [b4826736] Running [ -d $HOME/.rbenv/versions/2.3.1 ] as deploy@138.197.16.81
+ DEBUG [b4826736] Command: [ -d $HOME/.rbenv/versions/2.3.1 ]
+ DEBUG [b4826736] Finished in 9.889 seconds with exit status 0 (successful).
+  INFO [3dd51826] Running /usr/bin/env mkdir -p /tmp as deploy@138.197.16.81
+ DEBUG [3dd51826] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [3dd51826] Finished in 8.349 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-studynihongo-production-idiotflakes.sh 0.0%
+  INFO Uploading /tmp/git-ssh-studynihongo-production-idiotflakes.sh 100.0%
+  INFO [8ee418e4] Running /usr/bin/env chmod 700 /tmp/git-ssh-studynihongo-production-idiotflakes.sh as deploy@138.197.16.81
+ DEBUG [8ee418e4] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-studynihongo-production-idiotflakes.sh )
+  INFO [8ee418e4] Finished in 0.535 seconds with exit status 0 (successful).
+  INFO [bd9ba71a] Running /usr/bin/env git ls-remote --heads git://github.com/MikeIT-JEC/studynihongo.git as deploy@138.197.16.81
+ DEBUG [bd9ba71a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-studynihongo-production-idiotflakes.sh" ; /usr/bin/env git ls-remote --heads git://github.com/MikeIT-JEC/studynihongo.git )
+ DEBUG [bd9ba71a] 	809fe4d2b8bec93fce4cf9eae428911f7243fcdf	refs/heads/master
+  INFO [bd9ba71a] Finished in 0.877 seconds with exit status 0 (successful).
+  INFO [0579963c] Running /usr/bin/env mkdir -p home/deploy/studynihongo/shared home/deploy/studynihongo/releases as deploy@138.197.16.81
+ DEBUG [0579963c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p home/deploy/studynihongo/shared home/deploy/studynihongo/releases )
+  INFO [0579963c] Finished in 0.640 seconds with exit status 0 (successful).
+  INFO [2c253f4a] Running /usr/bin/env mkdir -p home/deploy/studynihongo/shared/bin home/deploy/studynihongo/shared/log home/deploy/studynihongo/shared/tmp/pids home/deploy/studynihongo/shared/tmp/cache home/deploy/studynihongo/shared/tmp/sockets home/deploy/studynihongo/shared/vendor/bundle home/deploy/studynihongo/shared/public/system home/deploy/studynihongo/shared/public/assets as deploy@138.197.16.81
+ DEBUG [2c253f4a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p home/deploy/studynihongo/shared/bin home/deploy/studynihongo/shared/log home/deploy/studynihongo/shared/tmp/pids home/deploy/studynihongo/shared/tmp/cache home/deploy/studynihongo/shared/tmp/sockets home/deploy/studynihongo/shared/vendor/bundle home/deploy/studynihongo/shared/public/system home/deploy/studynihongo/shared/public/assets )
+  INFO [2c253f4a] Finished in 0.766 seconds with exit status 0 (successful).
+  INFO [5ed5923f] Running /usr/bin/env mkdir -p home/deploy/studynihongo/shared/config as deploy@138.197.16.81
+ DEBUG [5ed5923f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p home/deploy/studynihongo/shared/config )
+  INFO [5ed5923f] Finished in 10.388 seconds with exit status 0 (successful).
+ DEBUG [ec6eaf35] Running [ -f home/deploy/studynihongo/shared/config/database.yml ] as deploy@138.197.16.81
+ DEBUG [ec6eaf35] Command: [ -f home/deploy/studynihongo/shared/config/database.yml ]
+ DEBUG [ec6eaf35] Finished in 1.044 seconds with exit status 0 (successful).
+ DEBUG [9b7fe407] Running [ -f home/deploy/studynihongo/shared/config/secrets.yml ] as deploy@138.197.16.81
+ DEBUG [9b7fe407] Command: [ -f home/deploy/studynihongo/shared/config/secrets.yml ]
+ DEBUG [9b7fe407] Finished in 0.918 seconds with exit status 0 (successful).
+ DEBUG [cc8bcc5c] Running [ -f home/deploy/studynihongo/current/REVISION ] as deploy@138.197.16.81
+ DEBUG [cc8bcc5c] Command: [ -f home/deploy/studynihongo/current/REVISION ]
+ DEBUG [cc8bcc5c] Finished in 1.352 seconds with exit status 1 (failed).
+ DEBUG [5f372590] Running [ -f home/deploy/studynihongo/repo/HEAD ] as deploy@138.197.16.81
+ DEBUG [5f372590] Command: [ -f home/deploy/studynihongo/repo/HEAD ]
+ DEBUG [5f372590] Finished in 0.568 seconds with exit status 0 (successful).
+  INFO The repository mirror is at home/deploy/studynihongo/repo
+ DEBUG [48ffdd20] Running if test ! -d home/deploy/studynihongo/repo; then echo "Directory does not exist 'home/deploy/studynihongo/repo'" 1>&2; false; fi as deploy@138.197.16.81
+ DEBUG [48ffdd20] Command: if test ! -d home/deploy/studynihongo/repo; then echo "Directory does not exist 'home/deploy/studynihongo/repo'" 1>&2; false; fi
+ DEBUG [48ffdd20] Finished in 0.719 seconds with exit status 0 (successful).
+  INFO [a3a33f50] Running /usr/bin/env git remote update --prune as deploy@138.197.16.81
+ DEBUG [a3a33f50] Command: cd home/deploy/studynihongo/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-studynihongo-production-idiotflakes.sh" ; /usr/bin/env git remote update --prune )
+  INFO [a3a33f50] Finished in 3.812 seconds with exit status 0 (successful).
+ DEBUG [fe651c5b] Running if test ! -d home/deploy/studynihongo/repo; then echo "Directory does not exist 'home/deploy/studynihongo/repo'" 1>&2; false; fi as deploy@138.197.16.81
+ DEBUG [fe651c5b] Command: if test ! -d home/deploy/studynihongo/repo; then echo "Directory does not exist 'home/deploy/studynihongo/repo'" 1>&2; false; fi
+ DEBUG [fe651c5b] Finished in 1.231 seconds with exit status 0 (successful).
+  INFO [90516b1a] Running /usr/bin/env mkdir -p home/deploy/studynihongo/releases/20161117105412 as deploy@138.197.16.81
+ DEBUG [90516b1a] Command: cd home/deploy/studynihongo/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-studynihongo-production-idiotflakes.sh" ; /usr/bin/env mkdir -p home/deploy/studynihongo/releases/20161117105412 )
+  INFO [90516b1a] Finished in 0.993 seconds with exit status 0 (successful).
+  INFO [2c2ee870] Running /usr/bin/env git archive production | tar -x -f - -C home/deploy/studynihongo/releases/20161117105412 as deploy@138.197.16.81
+ DEBUG [2c2ee870] Command: cd home/deploy/studynihongo/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-studynihongo-production-idiotflakes.sh" ; /usr/bin/env git archive production | tar -x -f - -C home/deploy/studynihongo/releases/20161117105412 )
+ DEBUG [2c2ee870] 	fatal: Not a valid object name
+ DEBUG [2c2ee870] 	tar: 
+ DEBUG [2c2ee870] 	This does not look like a tar archive
+ DEBUG [2c2ee870] 	
+ DEBUG [2c2ee870] 	tar: 
+ DEBUG [2c2ee870] 	Exiting with failure status due to previous errors
+ DEBUG [2c2ee870] 	

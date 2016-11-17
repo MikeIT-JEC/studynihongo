@@ -8,10 +8,10 @@ set :repo_url, 'git://github.com/MikeIT-JEC/studynihongo.git'
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, 'home/deploy/studynihongo' 
+# set :deploy_to, 'home/deploy/studynihongo' 
  
-set :linked_files, %w{config/database.yml config/secrets.yml}
-set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+# set :linked_files, %w{config/database.yml config/secrets.yml}
+# set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 # Default value for :scm is :git
 # set :scm, :git
 
@@ -26,10 +26,10 @@ set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public
 # set :pty, true
 
 # Default value for :linked_files is []
- # set :linked_files, 'config/database.yml', 'config/secrets.yml'
+ set :linked_files, 'config/database.yml', 'config/secrets.yml'
 
 # Default value for linked_dirs is []
- # set :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system'
+ set :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system'
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
