@@ -2,9 +2,8 @@
 lock '3.6.1'
 
 set :application, 'studynihongo'
-set :repo_url, 'git://github.com/MikeIT-JEC/studynihongo.git' 
-set :user, "deploy"
-set :stages, %w(production)
+set :repo_url, 'git://github.com/MikeIT-JEC/studynihongo.git'  
+
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
