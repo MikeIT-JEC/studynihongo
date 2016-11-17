@@ -1578,3 +1578,24 @@ and the repository exists.
   INFO [6fad643e] Running /usr/bin/env git clone --mirror git@bitbucket.org:mikeit_jec/studynihongo.git home/deploy/studynihongo/repo as deploy@138.197.16.81
  DEBUG [6fad643e] Command: cd home/deploy/studynihongo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-studynihongo-production-idiotflakes.sh" ; /usr/bin/env git clone --mirror git@bitbucket.org:mikeit_jec/studynihongo.git home/deploy/studynihongo/repo )
  DEBUG [6fad643e] 	fatal: destination path 'home/deploy/studynihongo/repo' already exists and is not an empty directory.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-11-17 17:48:07 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [2243aae7] Running [ -d $HOME/.rbenv/versions/2.3.1 ] as deploy@138.197.16.81
+ DEBUG [2243aae7] Command: [ -d $HOME/.rbenv/versions/2.3.1 ]
+ DEBUG [2243aae7] Finished in 19.897 seconds with exit status 0 (successful).
+  INFO [b2052e1e] Running /usr/bin/env mkdir -p /tmp as deploy@138.197.16.81
+ DEBUG [b2052e1e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [b2052e1e] Finished in 26.898 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-studynihongo-production-idiotflakes.sh 0.0%
+  INFO Uploading /tmp/git-ssh-studynihongo-production-idiotflakes.sh 100.0%
+  INFO [f8bac0b6] Running /usr/bin/env chmod 700 /tmp/git-ssh-studynihongo-production-idiotflakes.sh as deploy@138.197.16.81
+ DEBUG [f8bac0b6] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-studynihongo-production-idiotflakes.sh )
+  INFO [f8bac0b6] Finished in 0.526 seconds with exit status 0 (successful).
+  INFO [51493ddc] Running /usr/bin/env git ls-remote --heads git@github.com:MikeIT-JEC/studynihongo.git as deploy@138.197.16.81
+ DEBUG [51493ddc] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-studynihongo-production-idiotflakes.sh" ; /usr/bin/env git ls-remote --heads git@github.com:MikeIT-JEC/studynihongo.git )
+ DEBUG [51493ddc] 	Permission denied (publickey).
+ DEBUG [51493ddc] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
