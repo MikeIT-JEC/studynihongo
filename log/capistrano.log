@@ -1599,3 +1599,51 @@ and the repository exists.
 
 Please make sure you have the correct access rights
 and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-11-17 17:55:00 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [5143502e] Running [ -d $HOME/.rbenv/versions/2.3.1 ] as deploy@138.197.16.81
+ DEBUG [5143502e] Command: [ -d $HOME/.rbenv/versions/2.3.1 ]
+ DEBUG [5143502e] Finished in 23.673 seconds with exit status 0 (successful).
+  INFO [a32f5d6e] Running /usr/bin/env mkdir -p /tmp as deploy@138.197.16.81
+ DEBUG [a32f5d6e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [a32f5d6e] Finished in 5.852 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-studynihongo-production-idiotflakes.sh 0.0%
+  INFO Uploading /tmp/git-ssh-studynihongo-production-idiotflakes.sh 100.0%
+  INFO [17af8c92] Running /usr/bin/env chmod 700 /tmp/git-ssh-studynihongo-production-idiotflakes.sh as deploy@138.197.16.81
+ DEBUG [17af8c92] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-studynihongo-production-idiotflakes.sh )
+  INFO [17af8c92] Finished in 0.726 seconds with exit status 0 (successful).
+  INFO [3e7e0a80] Running /usr/bin/env git ls-remote --heads git@github.com:MikeIT-JEC/studynihongo.git as deploy@138.197.16.81
+ DEBUG [3e7e0a80] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-studynihongo-production-idiotflakes.sh" ; /usr/bin/env git ls-remote --heads git@github.com:MikeIT-JEC/studynihongo.git )
+ DEBUG [3e7e0a80] 	Warning: Permanently added the RSA host key for IP address '192.30.253.112' to the list of known hosts.
+ DEBUG [3e7e0a80] 	Permission denied (publickey).
+ DEBUG [3e7e0a80] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-11-17 18:00:21 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [8f1da2b2] Running [ -d $HOME/.rbenv/versions/2.3.1 ] as deploy@138.197.16.81
+ DEBUG [8f1da2b2] Command: [ -d $HOME/.rbenv/versions/2.3.1 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-11-17 18:01:11 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [e42de2b0] Running [ -d $HOME/.rbenv/versions/2.3.1 ] as deploy@138.197.16.81
+ DEBUG [e42de2b0] Command: [ -d $HOME/.rbenv/versions/2.3.1 ]
+ DEBUG [e42de2b0] Finished in 6.511 seconds with exit status 0 (successful).
+  INFO [5e5cd15d] Running /usr/bin/env mkdir -p /tmp as deploy@138.197.16.81
+ DEBUG [5e5cd15d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [5e5cd15d] Finished in 14.202 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-studynihongo-production-idiotflakes.sh 0.0%
+  INFO Uploading /tmp/git-ssh-studynihongo-production-idiotflakes.sh 100.0%
+  INFO [f7ff444f] Running /usr/bin/env chmod 700 /tmp/git-ssh-studynihongo-production-idiotflakes.sh as deploy@138.197.16.81
+ DEBUG [f7ff444f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-studynihongo-production-idiotflakes.sh )
+  INFO [f7ff444f] Finished in 6.056 seconds with exit status 0 (successful).
+  INFO [c9de33cd] Running /usr/bin/env git ls-remote --heads git@github.com:MikeIT-JEC/studynihongo.git as deploy@138.197.16.81
+ DEBUG [c9de33cd] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-studynihongo-production-idiotflakes.sh" ; /usr/bin/env git ls-remote --heads git@github.com:MikeIT-JEC/studynihongo.git )
+ DEBUG [c9de33cd] 	Permission denied (publickey).
+ DEBUG [c9de33cd] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.

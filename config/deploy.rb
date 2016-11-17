@@ -2,7 +2,7 @@
 lock '3.6.1'
 
 set :application, 'studynihongo'
-set :repo_url, 'git@github.com:MikeIT-JEC/studynihongo.git' 
+set :repo_url, 'git://github.com/MikeIT-JEC/studynihongo.git' 
 set :user, "deploy"
 set :stages, %w(production)
 # Default branch is :master
